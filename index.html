@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- style css-->
+	<style type="text/css">
+	* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	}
+	
+	.main {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("wlp.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll fixed;
+	}
+	
+	.navbar {
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	}
+	
+	.logo {
+	font-family: times new roman;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	width: 120px;
+	cursor: pointer;
+	}
+	
+	.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 5px;
+	position: relative;
+	}
+	
+	.navbar ul li a {
+	font-weight: bold;
+	color: white;
+	}
+	
+	.navbar ul li::after {
+	content: "";
+	height: 3px;
+	width: 0;
+	background: green;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+	}
+	
+	.navbar ul li:hover::after {
+	width: 100%;
+	}
+	
+	.content {
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: fixed;
+	transform: translateY(-50%);
+	}
+	
+	.content h3 {
+	font-size: 40px;
+	margin-top: 10%;
+	}
+	
+	.content p {
+	margin: 20px 10px;
+	font-weight: 100;
+	line-height: 25px;
+	}
+	
+	button {
+	width: 100px;
+	margin: 20px 10px;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	background: transparent;
+	border: 3px solid green;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+	overflow: hidden;
+	}
+	
+	span {
+	height: 100%;
+	width: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	position: absolute;
+	border-radius: 10px;
+	background: green;
+	transition: 0.5s;
+	}
+	
+	button a {
+	color: white;
+	}
+	
+	button:hover span {
+	width: 100%;
+	}
+	
+	button:hover {
+	border: none;
+	}
+	
+	
+	
+	</style>
+		<title>HomePage</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="navbar">
+				<label class="logo">Web_Ayu</label>
+				<ul>
+					<li><a href="#" >Home</a></li>
+					<li><a href="#" >Profil</a></li>
+					<li><a href="#" >Foto</a></li>
+					<li><a href="#" >Contact</a></li>
+				</ul>
+			</div><hr>
+			<div class="content">
+				<h3>Welcome To Website Pribadi Ayu</h3>
+				<p>Terima kasih telah mengunjungi web pribadi saya,<br> Didalam web saya ini ada 
+					beberapa menu tentang saya
+					ada menu profil untuk data diri saya, foto untuk
+					 kegiatan-kegiatan yang saya lakukan,
+					contact untuk menghubungi saya ataupun saran lainnya,<br> 
+					saya harap dengan website ini kamu bisa mengenal saya lebih dekat
+					dan akrab Semoga betah yaa				</p>
+				<div>
+					<button type="button"><span></span><a href="#" >About Me
+					</a></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
